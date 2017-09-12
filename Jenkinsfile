@@ -2,20 +2,19 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
-            steps {
-                sh 'npm --version'
-            }
-        }
-        stage('Test') {
+        stage('NPM Install') {
             steps {
                 sh 'npm install'
+            }
+        }
+        stage('Run tests') {
+            steps {
                 sh 'npm start'
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying to local....'
+                echo 'Deploying....'
             }
         }
     }
