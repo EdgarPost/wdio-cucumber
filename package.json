@@ -4,7 +4,7 @@
   "description": "Cucumber test",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/cucumber-js --compiler js:babel-register",
+    "start": "/Users/edgar/Sites/public/cucumber/node_modules/.bin/cucumber-js --compiler js:babel-register",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Edgar Post",
