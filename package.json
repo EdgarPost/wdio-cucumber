@@ -1,11 +1,10 @@
 {
-  "name": "cucumber-test",
-  "version": "1.0.0",
-  "description": "Cucumber test",
+  "name": "wdio-cucumber",
+  "version": "0.0.1",
+  "description": "Boilerplate for WebDriverIO with Cucumber",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/cucumber-js --compiler js:babel-register",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:features": "./node_modules/.bin/wdio"
   },
   "author": "Edgar Post",
   "license": "ISC",
@@ -14,7 +13,12 @@
     "babel-preset-stage-1": "^6.24.1",
     "babel-register": "^6.26.0",
     "cucumber": "^3.0.1",
-    "selenium-webdriver": "^3.5.0",
+    "wdio-cucumber-framework": "^1.0.2",
+    "wdio-selenium-standalone-service": "0.0.9",
+    "wdio-spec-reporter": "^0.1.2",
     "webdriverio": "^4.8.0"
+  },
+  "dependencies": {
+    "axios": "^0.16.2"
   }
 }
